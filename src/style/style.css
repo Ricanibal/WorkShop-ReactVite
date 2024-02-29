@@ -1,0 +1,15 @@
+.cuerpo
+{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+}
+
+.zonatrabajo
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
