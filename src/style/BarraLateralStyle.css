@@ -30,12 +30,15 @@
     justify-content: center;
     text-align: center;
     margin-top: 25%;
+    text-decoration: none;
 }
 
 .parrafobarra
 {
     text-align: center;
     font-size: small;
+    text-decoration: none;
+    color: black;
 }
 
 

@@ -8,18 +8,18 @@ import diamante from '../static/icon/diamante.png'
 export function Barra()
 {
     let Piezas = [ 
-                    {nombre:'Empleos', icono:empleo, mensaje:'imgEmpleos'},
-                    {nombre:'Postulaciones', icono:postulacion, mensaje:'imgPostulacion'},
-                    {nombre:'CodeX', icono:consola, mensaje:'imgRetos'},
-                    {nombre:'Bootcamp', icono:cohorchetes, mensaje:'imgBootcamp'},
-                    {nombre:'Premios', icono:diamante, mensaje:'imgPremios'},
-                    {nombre:'Tu cv', icono:curriculum, mensaje:'imgCV'},
+                    {nombre:'Empleos', icono:empleo, mensaje:'imgEmpleos',direccion:"/empleos"},
+                    {nombre:'Postulaciones', icono:postulacion, mensaje:'imgPostulacion',direccion:"/postulaciones"},
+                    {nombre:'CodeX', icono:consola, mensaje:'imgRetos',direccion:"/codex"},
+                    {nombre:'Bootcamp', icono:cohorchetes, mensaje:'imgBootcamp',direccion:"/bootcamp"},
+                    {nombre:'Premios', icono:diamante, mensaje:'imgPremios',direccion:"/premios"},
+                    {nombre:'Tu cv', icono:curriculum, mensaje:'imgCV',direccion:"/cv"},
                 ]
     return(
         <div className='barralaterla'>
             {Piezas.map((user) =>{
               return (
-                <a className='pieza'>
+                <a className='pieza' href={user.direccion}>
                     <img className='imagenbarra' src={user.icono} alt={user.mensaje}/>
                     <p className='parrafobarra'>{user.nombre}</p>
                 </a>
