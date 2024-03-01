@@ -1,5 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .cuerpoworking
 {
     height: 80vh;
-    background-color: yellow;
+}
+
+
+i{
+  color: black;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0;
+}
+.card{
+  width: 95%;
+  margin: auto;
+  height: 70px;
+
+  display: grid;
+  grid-template-columns: .1fr 1.9fr;
+  padding: 1rem;
+  gap: 50px;
+
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, .3);
+
+  transition: .1s all ease;
+}
+
+.card:hover{
+  -webkit-box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
+  -moz-box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
+  box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
+}
+
+.cardHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardHeader img{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.cardBody{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 10px;
+}
+
+.cardBody-top{
+  display: flex;
+}
+
+.cardBody-top{
+  display: flex;
+  gap: 20px;
+}
+
+.cardBody-top h2{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(18, 20, 22, 0.85);
+  font-size: 1.3em;
+  line-height: 24px;
+  margin: 0;
+
+  transition: .3s all ease;
+}
+
+.cardBody-top-technologies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.technologie, .benefits span{
+  border: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologie span{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(18, 20, 22);
+  font-size: 0.8em;
+  line-height: 24px;
+
+  padding: 3px 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.cardBody-buttom{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cardBody-buttom div{
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.cardBody-buttom div svg{
+  color: black;
+} 
+
+.cardBody-buttom span{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: rgba(33, 37, 41, .90);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  width: 190px;
+}
+
+.benefits{
+  display: flex;
+}
+.benefits span{
+  width: 30px;
+  border: 1px solid rgba(0, 0, 0, .5);
+  padding: 3px;
+
 }
