@@ -1,8 +1,8 @@
-import '../../style/WorkingStyle.css'
+import "../../style/WorkingStyle.css";
 
 import { useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   faFileCircleCheck,
@@ -15,353 +15,351 @@ import {
   faFaceSmileBeam,
 } from "@fortawesome/free-regular-svg-icons";
 
+export function Trabajos() {
+  const [jobs, setJobs] = useState([
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Coordinador de Tecnología Educativa",
+      skills: [
+        {
+          name: "Power Bi",
+          icon: "",
+        },
+        {
+          name: "Power Apps",
+          icon: "",
+        },
+        {
+          name: "Microsoft 365",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto - en cualquier lugar",
+      pay: "Confidencial",
+      amount: 1,
+      date: "about 9 hours ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Profesor de Portugués",
+      skills: [
+        {
+          name: "Educación Virtual",
+          icon: "",
+        },
+        {
+          name: "Microsoft Teams",
+          icon: "",
+        },
+        {
+          name: "Portugués",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto - en Brazil",
+      pay: "Confidencial",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Profesor de Tecnología",
+      skills: [
+        {
+          name: "Microsoft 365",
+          icon: "",
+        },
+        {
+          name: "English C1",
+          icon: "",
+        },
+        {
+          name: "pedagogical methodology",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto - en cualquier lugar",
+      pay: "Confidencial",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Líder de Tecnología",
+      skills: [
+        {
+          name: "Aws",
+          icon: "devicon-amazonwebservices-plain-wordmark",
+        },
+        {
+          name: "Software Development",
+          icon: "",
+        },
+        {
+          name: "Project Leadership",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto",
+      pay: "Confidencial",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Apoyo Técnico",
+      skills: [
+        {
+          name: "Customer Support",
+          icon: "",
+        },
+        {
+          name: "Power Apps",
+          icon: "",
+        },
+        {
+          name: "Microsoft For Education",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto en Brazil",
+      pay: "Confidencial",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://peaku.co/img/company.svg",
+      name: "Practicante Comunicaciones",
+      skills: [
+        {
+          name: "Attitude To Service",
+          icon: "",
+        },
+      ],
+      company: "Curryt",
+      modality: "Bogotá",
+      pay: "$ 1.2M - 1.3M COP",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://peaku.co/img/company.svg",
+      name: "Auxiliar Contable",
+      skills: [
+        {
+          name: "Compliance With Indicators",
+          icon: "",
+        },
+        {
+          name: "Organizational Capacity",
+          icon: "",
+        },
+        {
+          name: "Agile Work.",
+          icon: "",
+        },
+      ],
+      company: "Confidencial",
+      modality: "Bucaramanga",
+      pay: "Confidencial",
+      amount: 1,
+      date: "2 day ago",
+      benefits: [
+        {
+          name: "Certificaciones",
+          icon: faFileCircleCheck,
+        },
+        {
+          name: "Fiesta de fin de año",
+          icon: faFaceSmileBeam,
+        },
+        {
+          name: "Capacitaciones",
+          icon: faFileCircleCheck,
+        },
+      ],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Profesor de Matemáticas",
+      skills: [
+        {
+          name: "Microsoft 365",
+          icon: "",
+        },
+        {
+          name: "English C1",
+          icon: "",
+        },
+        {
+          name: "Pedagogical Methodology",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto - Cualquier lugar",
+      pay: "Confidencial",
+      amount: 1,
+      date: "7 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/80639/Invoway.png",
+      name: "Desarrollador Senior Java EE",
+      skills: [
+        {
+          name: "Spring",
+          icon: "devicon-spring-original",
+        },
+        {
+          name: "Java Usa",
+          icon: "devicon-java-plain",
+        },
+        {
+          name: "Agile Scrum Methodology",
+          icon: "",
+        },
+      ],
+      company: "INVOWAY",
+      modality: "Remoto en Colombia",
+      pay: "$ 8M - 10M COP",
+      amount: 5,
+      date: "2 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Coordinadora de gestión humana",
+      skills: [
+        {
+          name: "Microsoft Office",
+          icon: "",
+        },
+        {
+          name: "Assertive Communication",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto en",
+      pay: "Confidencial",
+      amount: 1,
+      date: "7 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Asistente de Recursos Humanos",
+      skills: [
+        {
+          name: "Microsoft Office",
+          icon: "",
+        },
+        {
+          name: "Assertive Communication",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto en",
+      pay: "Confidencial",
+      amount: 1,
+      date: "7 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
+      name: "Consejero comercial",
+      skills: [
+        {
+          name: "Microsoft Office",
+          icon: "",
+        },
+        {
+          name: "Negotiate",
+          icon: "",
+        },
+        {
+          name: "B2c",
+          icon: "",
+        },
+      ],
+      company: "Genuine Digital School",
+      modality: "Remoto en Colombia",
+      pay: "Confidencial",
+      amount: 1,
+      date: "7 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://peaku.co/img/company.svg",
+      name: "Key account manager",
+      skills: [
+        {
+          name: "Account Management",
+          icon: "",
+        },
+      ],
+      company: "Confidencial",
+      modality: "Bogotá",
+      pay: "$ 4M - 4.5M COP",
+      amount: 1,
+      date: "8 days ago",
+      benefits: [{}],
+    },
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/48484/skalo.jpg",
+      name: "Analista de Datos",
+      skills: [
+        {
+          name: "Python",
+          icon: "devicon-python-plain",
+        },
+        {
+          name: "Power Bi",
+          icon: "",
+        },
+        {
+          name: "Analysis of Data",
+          icon: "",
+        },
+      ],
+      company: "Skalo",
+      modality: "Remoto en Colombia",
+      pay: "$ 2.5M - 4.5M COP",
+      amount: 1,
+      date: "6 days ago",
+      benefits: [
+        {
+          name: "Trabajo remoto",
+          icon: faLocation,
+        },
+        {
+          name: "Ambiente de trabajo amigable",
+          icon: faUserGroup,
+        },
+        {
+          name: "Flexibilidad de horarios",
+          icon: faCalendar,
+        },
+      ],
+    },
+  ]);
 
-export function Trabajos ()
-{
-    const [jobs, setJobs] = useState([
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Coordinador de Tecnología Educativa",
-          skills: [
-            {
-              name: "Power Bi",
-              icon: "",
-            },
-            {
-              name: "Power Apps",
-              icon: "",
-            },
-            {
-              name: "Microsoft 365",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto - en cualquier lugar",
-          pay: "Confidencial",
-          amount: 1,
-          date: "about 9 hours ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Profesor de Portugués",
-          skills: [
-            {
-              name: "Educación Virtual",
-              icon: "",
-            },
-            {
-              name: "Microsoft Teams",
-              icon: "",
-            },
-            {
-              name: "Portugués",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto - en Brazil",
-          pay: "Confidencial",
-          amount: 1,
-          date: "1 day ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Profesor de Tecnología",
-          skills: [
-            {
-              name: "Microsoft 365",
-              icon: "",
-            },
-            {
-              name: "English C1",
-              icon: "",
-            },
-            {
-              name: "pedagogical methodology",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto - en cualquier lugar",
-          pay: "Confidencial",
-          amount: 1,
-          date: "1 day ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Líder de Tecnología",
-          skills: [
-            {
-              name: "Aws",
-              icon: "devicon-amazonwebservices-plain-wordmark",
-            },
-            {
-              name: "Software Development",
-              icon: "",
-            },
-            {
-              name: "Project Leadership",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto",
-          pay: "Confidencial",
-          amount: 1,
-          date: "1 day ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Apoyo Técnico",
-          skills: [
-            {
-              name: "Customer Support",
-              icon: "",
-            },
-            {
-              name: "Power Apps",
-              icon: "",
-            },
-            {
-              name: "Microsoft For Education",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto en Brazil",
-          pay: "Confidencial",
-          amount: 1,
-          date: "1 day ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://peaku.co/img/company.svg",
-          name: "Practicante Comunicaciones",
-          skills: [
-            {
-              name: "Attitude To Service",
-              icon: "",
-            },
-          ],
-          company: "Curryt",
-          modality: "Bogotá",
-          pay: "$ 1.2M - 1.3M COP",
-          amount: 1,
-          date: "1 day ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://peaku.co/img/company.svg",
-          name: "Auxiliar Contable",
-          skills: [
-            {
-              name: "Compliance With Indicators",
-              icon: "",
-            },
-            {
-              name: "Organizational Capacity",
-              icon: "",
-            },
-            {
-              name: "Agile Work.",
-              icon: "",
-            },
-          ],
-          company: "Confidencial",
-          modality: "Bucaramanga",
-          pay: "Confidencial",
-          amount: 1,
-          date: "2 day ago",
-          benefits: [
-            {
-              name: "Certificaciones",
-              icon: faFileCircleCheck,
-            },
-            {
-              name: "Fiesta de fin de año",
-              icon: faFaceSmileBeam,
-            },
-            {
-              name: "Capacitaciones",
-              icon: faFileCircleCheck,
-            },
-          ],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Profesor de Matemáticas",
-          skills: [
-            {
-              name: "Microsoft 365",
-              icon: "",
-            },
-            {
-              name: "English C1",
-              icon: "",
-            },
-            {
-              name: "Pedagogical Methodology",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto - Cualquier lugar",
-          pay: "Confidencial",
-          amount: 1,
-          date: "7 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/80639/Invoway.png",
-          name: "Desarrollador Senior Java EE",
-          skills: [
-            {
-              name: "Spring",
-              icon: "devicon-spring-original",
-            },
-            {
-              name: "Java Usa",
-              icon: "devicon-java-plain",
-            },
-            {
-              name: "Agile Scrum Methodology",
-              icon: "",
-            },
-          ],
-          company: "INVOWAY",
-          modality: "Remoto en Colombia",
-          pay: "$ 8M - 10M COP",
-          amount: 5,
-          date: "2 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Coordinadora de gestión humana",
-          skills: [
-            {
-              name: "Microsoft Office",
-              icon: "",
-            },
-            {
-              name: "Assertive Communication",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto en",
-          pay: "Confidencial",
-          amount: 1,
-          date: "7 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Asistente de Recursos Humanos",
-          skills: [
-            {
-              name: "Microsoft Office",
-              icon: "",
-            },
-            {
-              name: "Assertive Communication",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto en",
-          pay: "Confidencial",
-          amount: 1,
-          date: "7 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
-          name: "Consejero comercial",
-          skills: [
-            {
-              name: "Microsoft Office",
-              icon: "",
-            },
-            {
-              name: "Negotiate",
-              icon: "",
-            },
-            {
-              name: "B2c",
-              icon: "",
-            },
-          ],
-          company: "Genuine Digital School",
-          modality: "Remoto en Colombia",
-          pay: "Confidencial",
-          amount: 1,
-          date: "7 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://peaku.co/img/company.svg",
-          name: "Key account manager",
-          skills: [
-            {
-              name: "Account Management",
-              icon: "",
-            },
-          ],
-          company: "Confidencial",
-          modality: "Bogotá",
-          pay: "$ 4M - 4.5M COP",
-          amount: 1,
-          date: "8 days ago",
-          benefits: [{}],
-        },
-        {
-          logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/48484/skalo.jpg",
-          name: "Analista de Datos",
-          skills: [
-            {
-              name: "Python",
-              icon: "devicon-python-plain",
-            },
-            {
-              name: "Power Bi",
-              icon: "",
-            },
-            {
-              name: "Analysis of Data",
-              icon: "",
-            },
-          ],
-          company: "Skalo",
-          modality: "Remoto en Colombia",
-          pay: "$ 2.5M - 4.5M COP",
-          amount: 1,
-          date: "6 days ago",
-          benefits: [
-            {
-              name: "Trabajo remoto",
-              icon: faLocation,
-            },
-            {
-              name: "Ambiente de trabajo amigable",
-              icon: faUserGroup,
-            },
-            {
-              name: "Flexibilidad de horarios",
-              icon: faCalendar,
-            },
-          ],
-        },
-      ]);
-    
-    return(
-        <div className='cuerpoworking'>
-                  <section className="cards">
+  return (
+    <div className="cuerpoworking">
+      <section className="cards">
         {jobs.map((item, index) => (
           <div className="card">
             <div className="cardHeader">
@@ -516,7 +514,6 @@ export function Trabajos ()
           </div>
         ))}
       </section>
-        </div>
-    )
+    </div>
+  );
 }
-
