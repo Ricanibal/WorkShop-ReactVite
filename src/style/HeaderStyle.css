@@ -2,12 +2,74 @@
 {
     height: 10vh;
     background-color: greenyellow;
+    font-family: "Montserrat", sans-serif;
 }
 
 .HeaderWork
 {
     height: 10vh ;
     width: 100%;
-    background-color: red;
+    background-color: #3A8CED;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* HeaderStyle.css */
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Esto alinea los elementos a la derecha */
+  }
+  
+  .nav li {
+    margin-left: 20px; /* Espacio entre elementos */
+    margin-right: 10px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 1px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li {
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+ 
+  .nav-button::after {
+    content: "";
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M5 7l5 5 5-5" /%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .nav-button.isOpen::after {
+    transform: rotate(180deg);
+  }

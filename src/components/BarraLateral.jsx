@@ -1,13 +1,13 @@
-import '../style/BarraLateralStyle.css'
 import consola from '../static/icon/consola.png'
-import curriculum from '../static/icon/curriculum.png' 
+import curriculum from '../static/icon/curriculum.png'
+import diamante from '../static/icon/diamante.png'
 import empleo from '../static/icon/empleo.png'
 import postulacion from '../static/icon/postulacion.png'
 import cohorchetes from '../static/icon/soportes.png'
-import diamante from '../static/icon/diamante.png'
+import '../style/BarraLateralStyle.css'
 export function Barra()
 {
-    let Piezas = [ 
+    let Piezas = [
                     {nombre:'Empleos', icono:empleo, mensaje:'imgEmpleos',direccion:"/empleos"},
                     {nombre:'Postulaciones', icono:postulacion, mensaje:'imgPostulacion',direccion:"/postulaciones"},
                     {nombre:'CodeX', icono:consola, mensaje:'imgRetos',direccion:"/codex"},
