@@ -1,58 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.cuerpoworking {
-  height: 80vh;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.cuerpoworking
+{
+    height: 80vh;
+    background: #F8F9FA;
 }
 
-i {
+
+i{
   color: black;
 }
 
-.cards {
+.cards{
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 10px 0;
-
-  background: #F8F9FA;
 }
-.card {
+
+.card{
   width: 95%;
   margin: auto;
   height: 70px;
 
   display: grid;
-  grid-template-columns: 0.1fr 1.9fr;
+  grid-template-columns: .1fr 1.9fr;
   padding: 1rem;
   gap: 50px;
 
   border-radius: 5px;
-  background: #ffffff;
+  background: #FFFFFF;
   border: none;
-  border: 1px solid rgba(128, 128, 128, 0.3);
+  border: 1px solid rgba(128, 128, 128, .3);
 
-  transition: 0.1s all ease;
+  transition: .1s all ease;
 }
 
-.card:hover {
-  -webkit-box-shadow: -1px 17px 22px -15px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: -1px 17px 22px -15px rgba(0, 0, 0, 0.44);
-  box-shadow: -1px 17px 22px -15px rgba(0, 0, 0, 0.44);
+.card:hover{
+  -webkit-box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
+  -moz-box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
+  box-shadow: -1px 17px 22px -15px rgba(0,0,0,0.44);
 }
 
-.cardHeader {
+.cardHeader{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cardHeader img {
+.cardHeader img{
   width: 70px;
   height: 70px;
   object-fit: contain;
 }
 
-.cardBody {
+.cardBody{
   display: flex;
   flex-direction: column;
 
@@ -60,16 +62,16 @@ i {
   gap: 10px;
 }
 
-.cardBody-top {
+.cardBody-top{
   display: flex;
 }
 
-.cardBody-top {
+.cardBody-top{
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.cardBody-top h2 {
+.cardBody-top h2{
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -78,10 +80,10 @@ i {
   line-height: 24px;
   margin: 0;
 
-  transition: 0.3s all ease;
+  transition: .3s all ease;
 }
 
-.cardBody-top-technologies {
+.cardBody-top-technologies{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,70 +91,139 @@ i {
   gap: 5px;
 }
 
-.technologie,
-.benefits span {
+.technologie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1em .5em;
+  width: auto;
+}
+
+.technologie, .benefits span{
   border: none;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, .8);
   border-radius: 30px;
-  height: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.technologie span {
+.technologie span{
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: rgb(18, 20, 22);
   font-size: 0.8em;
-  line-height: 24px;
-
-  padding: 3px 8px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
+
+  white-space: nowrap;
 }
 
-.cardBody-buttom {
+.cardBody-buttom{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
-.cardBody-buttom div {
+.cardBody-buttom div{
   display: flex;
   align-items: center;
 
   gap: 4px;
+  padding: 0 5px;
+  max-width: 100%;
+  min-width: 40%;
 }
 
-.cardBody-buttom div svg {
+.cardBody-buttom div svg{
   color: black;
-}
+  min-width: 16px;
+  min-height: 16px;
+} 
 
-.cardBody-buttom span {
+.cardBody-buttom span{
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
-  color: rgba(33, 37, 41, 0.9);
+  color: rgba(33, 37, 41, .90);
 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
-  width: 190px;
+  max-width: 100%;
 }
 
-.benefits {
+.benefits{
   display: flex;
 }
-.benefits span {
+.benefits span{
   width: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, .5);
   padding: 3px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .technologie{
+    max-width: auto;
+    max-height: auto;
+    padding: 0px;
+
+    padding: .1em .5em;
+  }
+
+}
+
+@media screen and (max-width: 811px) {
+
+  .cardBody{
+    width: 95%;
+  }
+
+  .cardBody-top h2{
+    font-size: 1.3rem;
+  }
+
+  .card{
+    height: auto;
+    padding: 0;
+
+    gap: 10px;
+    padding: 1rem 0px;
+  }
+
+  .cardBody-buttom{
+    display: none;
+  }
+
+  .cardBody-top{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .cardBody-top-technologies{
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .technologie{
+    max-width: auto;
+    max-height: auto;
+    padding: 0px;
+
+    padding: .2em .5em;
+  }
+
+  .technologie span{
+    font-size: .8em;
+  }
+  
 }
