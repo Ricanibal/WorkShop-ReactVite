@@ -8,7 +8,7 @@ export function HeaderFiltro() {
   const [cargoMenuOpen, setCargoMenuOpen] = useState(false);
   const [salarioMenuOpen, setSalarioMenuOpen] = useState(false);
   const [ubicacionMenuOpen, setUbicacionMenuOpen] = useState(false);
-
+  const [searchQuery, setSearchQuery] = useState('');
 
   const areaRef = useRef(null);
   const cargoRef = useRef(null);
@@ -69,9 +69,36 @@ export function HeaderFiltro() {
     setSalarioMenuOpen(false);
   };
 
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    // Aquí puedes realizar alguna acción cuando se envíe el formulario de búsqueda
+    event.preventDefault();
+    console.log('Búsqueda realizada:', searchQuery);
+  };
+
     return(
       <div className='HeaderWork'>
         <ul className='nav'>
+
+        <li>
+          <form onSubmit={handleSearchSubmit}>
+            <div className="search-bar">
+            <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={handleSearchInputChange}
+                placeholder="Busca por cargo, salario, ubicacion o empresa"
+                className="search-input"
+              />
+              
+            </div>
+          </form>
+        </li>
+
           <li ref={areaRef}>
           <button className='nav-button' onClick={toggleAreaMenu}>
             Área
