@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .cuerpoworking
 {
     height: 80vh;
     background: #F8F9FA;
 }
-
 
 i{
   color: black;
@@ -124,6 +124,10 @@ i{
   white-space: nowrap;
 }
 
+.technologie span i{
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
 .cardBody-buttom{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -163,11 +167,98 @@ i{
 .benefits{
   display: flex;
 }
+
 .benefits span{
   width: 30px;
   border: 1px solid rgba(0, 0, 0, .5);
   padding: 3px;
+}
 
+
+/* Footer */
+.footer{
+  width: 100%;
+  margin: auto;
+
+  background: #3988CB;
+  color: white;
+}
+.FooterPrincipal{
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin: auto;
+}
+
+.footerTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footerMain{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
+
+.footerMain li{
+  list-style: none;
+}
+
+.footerMain ul h4{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(18, 20, 22, 0.90);
+  font-size: .9em;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.footerMain li a, .footerBottomCopy{
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .8em;
+  line-height: 24px;
+  margin: 0;
+
+  color: white;
+}
+
+.footerBottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.footerBottom .footerBottomRedes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footerBottomRedes .icon{
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
