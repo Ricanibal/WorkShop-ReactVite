@@ -87,9 +87,9 @@ export function HeaderFiltro() {
           <div class="wrap">
             <div class="search">
               <button type="submit" class="searchButton">
-                  <i class="fa fa-search"></i>
+                  <i class="fa fa-search lupa"></i>
               </button>
-              <input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+              <input type="text" class="searchTerm" placeholder="Busca por cargo, salario, ubicación o empresa"/>
             </div>
           </div>
         </li>

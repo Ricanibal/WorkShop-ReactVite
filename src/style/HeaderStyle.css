@@ -8,6 +8,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* CSS de HeaderFiltro.jsx */
 .HeaderWork
 {
     height: 10vh ;
@@ -16,7 +17,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* HeaderStyle.css */
 .nav {
     list-style-type: none;
     display: flex;
@@ -95,11 +95,15 @@
     font-size: 20px;
   }
   
-  /*Resize the wrap to see the search bar change!*/
+/*¡Cambie el tamaño del ajuste para ver cómo cambia la barra de búsqueda!*/
   .wrap{
     width: 30%;
     position: absolute;
     top: 15%;
     left: 30%; /* Alinea a la izquierda */
     transform: translate(-50%, -50%);
+  }
+
+  .lupa{
+    color: #495057;
   }
