@@ -1,6 +1,6 @@
 import "../../style/WorkingStyle.css";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,8 +15,35 @@ import {
   faFaceSmileBeam,
 } from "@fortawesome/free-regular-svg-icons";
 
+
+import { faLinkedin, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 export function Trabajos() {
-  const [jobs, setJobs] = useState([
+  const [jobs, setJobs] = useState
+  ([
+    {
+      logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/40023/expertech.png",
+      name: "Analista de infraestructura IT",
+      skills: [
+        {
+          name: "Azure Cloud",
+          icon: "devicon-azure-plain colored",
+        },
+        {
+          name: "Sophos",
+          icon: "",
+        },
+        {
+          name: "Acronis",
+          icon: "",
+        },
+      ],
+      company: "EXPERTECH",
+      modality: "Medellin",
+      pay: "4M - 5M COP",
+      amount: 1,
+      date: "1 day ago",
+      benefits: [{}],
+    },
     {
       logo: "https://s3-us-west-2.amazonaws.com/peaku-public/business/Company/logo_url/530708/Logo-Genuine-Digital-School.jpg",
       name: "Coordinador de Tecnología Educativa",
@@ -356,7 +383,7 @@ export function Trabajos() {
       ],
     },
   ]);
-
+  
   return (
     <div className="cuerpoworking">
       <section className="cards">
@@ -500,7 +527,6 @@ export function Trabajos() {
                           <FontAwesomeIcon
                             className="icon"
                             icon={item3.icon}
-                            alt={item3.name}
                           />
                         </span>
                       ) : (
@@ -513,6 +539,68 @@ export function Trabajos() {
             </div>
           </div>
         ))}
+      </section>
+
+      <section className="footer">
+      <div className='FooterPrincipal'>
+            <div className="footerTitle">
+                <h2>¡Descubre la nueva forma de encontrar empleo!</h2>
+            </div>
+
+            <div className="footerMain">
+                <ul>
+                    <h4>Top de empleos</h4>
+                    <li><a href="#">Bootcamp Desarrolladores AI Fullstack</a></li>
+                    <li><a href="#">Cohorte 12</a></li>
+                    <li><a href="#">Analista de datos</a></li>
+                    <li><a href="#">Auxiliar de enfermería</a></li>
+                    <li><a href="#">Líder administrativo</a></li>
+                    <li><a href="#">Técnico en Soporte Nivel 1</a></li>
+                </ul>  
+
+
+                <ul>
+                    <h4>Top categorías de empleo</h4>
+                    <li><a href="#">Frontend Dev</a></li>
+                    <li><a href="#">Fullstack</a></li>
+                    <li><a href="#">Backend Dev</a></li>
+                    <li><a href="#">Mobile Dev</a></li>
+                    <li><a href="#">Gerente de reclutamiento</a></li>
+                </ul>   
+
+
+                <ul>
+                    <h4>Empresas</h4>
+                    <li><a href="#">Publicar empleo</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Nuestro proceso</a></li>
+                    <li><a href="#">Comercial</a></li>
+                </ul> 
+
+                <ul>
+                    <h4>Legal</h4>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política privacidad</a></li>
+                </ul> 
+            </div>
+
+            <div className="footerBottom">
+                <div className="footerBottomRedes">
+                  <span>
+                    <FontAwesomeIcon className="icon" icon={faFacebook} />
+                  </span>
+                  <span>
+                    <FontAwesomeIcon className="icon" icon={faInstagram} />
+                  </span>
+                  <span>
+                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                  </span>
+                </div>
+                <div className="footerBottomCopy">
+                    <p> © 2024 PeakU Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
       </section>
     </div>
   );
