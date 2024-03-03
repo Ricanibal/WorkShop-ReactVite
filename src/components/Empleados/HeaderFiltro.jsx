@@ -84,19 +84,14 @@ export function HeaderFiltro() {
         <ul className='nav'>
 
         <li>
-          <form onSubmit={handleSearchSubmit}>
-            <div className="search-bar">
-            <button type="submit" className="search-button"><i className="fa fa-search"></i></button>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={handleSearchInputChange}
-                placeholder="Busca por cargo, salario, ubicacion o empresa"
-                className="search-input"
-              />
-              
+          <div class="wrap">
+            <div class="search">
+              <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+              </button>
+              <input type="text" class="searchTerm" placeholder="What are you looking for?"/>
             </div>
-          </form>
+          </div>
         </li>
 
           <li ref={areaRef}>
