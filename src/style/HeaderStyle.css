@@ -1,13 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
 .HeaderPrincipal
 {
     height: 10vh;
     background-color: greenyellow;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* CSS de HeaderFiltro.jsx */
 .HeaderWork
 {
     height: 10vh ;
     width: 100%;
-    background-color: red;
+    background-color: #3A8CED;
+    font-family: "Montserrat", sans-serif;
 }
 
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Esto alinea los elementos a la derecha */
+  }
+  
+  .nav li {
+    margin-left: 10px; /* Espacio entre elementos */
+    margin-right: 10px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+  .nav-button:hover {
+    background-color: white;
+    color: black
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li {
+    color: white;
+    padding: 5px 0;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #F8F9FA;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #F8F9FA;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #F8F9FA;
+    background: #F8F9FA;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+/*¡Cambie el tamaño del ajuste para ver cómo cambia la barra de búsqueda!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 30%; /* Alinea a la izquierda */
+    transform: translate(-50%, -50%);
+  }
+
+  .lupa{
+    color: #495057;
+  }
