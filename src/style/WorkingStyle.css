@@ -204,16 +204,28 @@ i{
   margin: 0;
 }
 
+.footerTitle h2{
+  text-align: center;
+}
+
 .footerMain{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
 
+  flex-wrap: wrap;
+  gap: 5px;
+
 }
 
 .footerMain li{
   list-style: none;
+}
+
+.footerMain ul{
+  padding: 0;
+  margin: 0;
 }
 
 .footerMain ul h4{
@@ -232,7 +244,7 @@ i{
 
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: .8em;
   line-height: 24px;
   margin: 0;
@@ -270,6 +282,26 @@ i{
     padding: .1em .5em;
   }
 
+  .FooterPrincipal{
+    width: 90%;
+  }
+
+  .footerMain{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .footerTitle h2{
+    font-size: 1em;
+  }
+
+  .footerMain li a, .footerBottomCopy{
+    font-size: .9em;
+    font-weight: 700;
+  }
 }
 
 @media screen and (max-width: 811px) {
