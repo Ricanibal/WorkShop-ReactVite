@@ -597,7 +597,7 @@ export function Trabajos() {
                   </span>
                 </div>
                 <div className="footerBottomCopy">
-                    <p>2024 PeakU Inc. All Rights Reserved.</p>
+                    <p> © 2024 PeakU Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
