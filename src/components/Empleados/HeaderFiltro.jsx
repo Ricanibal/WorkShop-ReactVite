@@ -73,26 +73,21 @@ export function HeaderFiltro() {
     setSearchQuery(event.target.value);
   };
 
-  const handleSearchSubmit = (event) => {
-    // Aquí puedes realizar alguna acción cuando se envíe el formulario de búsqueda
-    event.preventDefault();
-    console.log('Búsqueda realizada:', searchQuery);
-  };
-
     return(
       <div className='HeaderWork'>
-        <ul className='nav'>
-
-        <li>
-          <div class="wrap">
-            <div class="search">
-              <button type="submit" class="searchButton">
-                  <i class="fa fa-search lupa"></i>
-              </button>
-              <input type="text" class="searchTerm" placeholder="Busca por cargo, salario, ubicación o empresa"/>
+        <ul className='navbar'>
+          <li>
+            <div class="search-container">
+              <div class="wrap">
+                <div class="search">
+                  <button type="submit" class="searchButton">
+                      <i class="fa fa-search lupa"></i>
+                  </button>
+                  <input type="text" class="searchTerm" placeholder="Busca por cargo, salario, ubicación o empresa"/>
+                </div>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
           <li ref={areaRef}>
           <button className='nav-button' onClick={toggleAreaMenu}>

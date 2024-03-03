@@ -1,29 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
-.HeaderPrincipal
-{
+.HeaderPrincipal {
     height: 10vh;
-    background-color: greenyellow;
+    background-color: #3fb92f;
     font-family: "Montserrat", sans-serif;
 }
 
+.logoImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px; /* ajusta el tamaño de la imagen según sea necesario */
+    height: 63px; /* ajusta el tamaño de la imagen según sea necesario */
+}
+
 /* CSS de HeaderFiltro.jsx */
-.HeaderWork
-{
+.HeaderWork {
     height: 10vh ;
     width: 100%;
     background-color: #3A8CED;
     font-family: "Montserrat", sans-serif;
 }
 
-.nav {
+.navbar {
     list-style-type: none;
     display: flex;
     justify-content: flex-end; /* Esto alinea los elementos a la derecha */
   }
   
-  .nav li {
+  .navbar li {
     margin-left: 10px; /* Espacio entre elementos */
     margin-right: 10px;
   }
@@ -63,13 +69,12 @@
   }
   
   .search {
-    width: 100%;
-    position: relative;
     display: flex;
+    align-items: center;
   }
   
   .searchTerm {
-    width: 100%;
+    width: 200px;
     border: 3px solid #F8F9FA;
     border-right: none;
     padding: 5px;
@@ -86,15 +91,21 @@
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #F8F9FA;
+    border: none;
     background: #F8F9FA;
     text-align: center;
     color: #fff;
     border-radius: 5px 0 0 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
   }
   
+.search-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  margin-left: 10px; /* Agrega margen izquierdo */
+}
+
 /*¡Cambie el tamaño del ajuste para ver cómo cambia la barra de búsqueda!*/
   .wrap{
     width: 30%;
