@@ -8,7 +8,6 @@ export function HeaderFiltro() {
   const [cargoMenuOpen, setCargoMenuOpen] = useState(false);
   const [salarioMenuOpen, setSalarioMenuOpen] = useState(false);
   const [ubicacionMenuOpen, setUbicacionMenuOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
 
   const areaRef = useRef(null);
   const cargoRef = useRef(null);
@@ -69,14 +68,10 @@ export function HeaderFiltro() {
     setSalarioMenuOpen(false);
   };
 
-  const handleSearchInputChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-
     return(
       <div className='HeaderWork'>
         <ul className='navbar'>
-          <li>
+        <li className='liHeaderFiltro'>
             <div class="search-container">
               <div class="wrap">
                 <div class="search">
@@ -89,60 +84,60 @@ export function HeaderFiltro() {
             </div>
           </li>
 
-          <li ref={areaRef}>
-          <button className='nav-button' onClick={toggleAreaMenu}>
-            Área
-            <i className='fa fa-caret-down'></i>
-          </button>
-          {areaMenuOpen && (
-            <ul className='dropdown-menu'>
-              <li>Elemento 1</li>
-              <li>Elemento 2</li>
-              <li>Elemento 3</li>
-            </ul>
-          )}
+          <li className='liHeaderFiltro' ref={areaRef}>
+            <button className='nav-button' onClick={toggleAreaMenu}>
+              Área
+              <i className='fa fa-caret-down'></i>
+            </button>
+            {areaMenuOpen && (
+              <ul className='dropdown-menu'>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+              </ul>
+            )}
           </li>
 
-          <li ref={cargoRef}>
-          <button className='nav-button' onClick={toggleCargoMenu}>
-            Cargo
-            <i className='fa fa-caret-down'></i>
-          </button>
-          {cargoMenuOpen && (
-            <ul className='dropdown-menu'>
-              <li>Elemento 1</li>
-              <li>Elemento 2</li>
-              <li>Elemento 3</li>
-            </ul>
-          )}
+          <li className='liHeaderFiltro' ref={cargoRef}>
+            <button className='nav-button' onClick={toggleCargoMenu}>
+              Cargo
+              <i className='fa fa-caret-down'></i>
+            </button>
+            {cargoMenuOpen && (
+              <ul className='dropdown-menu'>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+              </ul>
+            )}
           </li>
           
-          <li ref={salarioRef}>
-          <button className='nav-button' onClick={toggleSalarioMenu}>
-            Salario
-            <i className='fa fa-caret-down'></i>
-          </button>
-          {salarioMenuOpen && (
-            <ul className='dropdown-menu'>
-              <li>Elemento 1</li>
-              <li>Elemento 2</li>
-              <li>Elemento 3</li>
-            </ul>
-          )}
+          <li className='liHeaderFiltro' ref={salarioRef}>
+            <button className='nav-button' onClick={toggleSalarioMenu}>
+              Salario
+              <i className='fa fa-caret-down'></i>
+            </button>
+            {salarioMenuOpen && (
+              <ul className='dropdown-menu'>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+              </ul>
+            )}
           </li>
           
-          <li ref={ubicacionRef}>
-          <button className='nav-button' onClick={toggleUbicacionMenu}>
-            Ubicación
-            <i className='fa fa-caret-down'></i>
-          </button>
-          {ubicacionMenuOpen && (
-            <ul className='dropdown-menu'>
-              <li>Elemento 1</li>
-              <li>Elemento 2</li>
-              <li>Elemento 3</li>
-            </ul>
-          )}
+          <li className='liHeaderFiltro' ref={ubicacionRef}>
+            <button className='nav-button' onClick={toggleUbicacionMenu}>
+              Ubicación
+              <i className='fa fa-caret-down'></i>
+            </button>
+            {ubicacionMenuOpen && (
+              <ul className='dropdown-menu'>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+              </ul>
+            )}
           </li>
         </ul>
       </div>

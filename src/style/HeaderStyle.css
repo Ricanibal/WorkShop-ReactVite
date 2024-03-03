@@ -1,19 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
 .HeaderPrincipal {
     height: 10vh;
-    background-color: #3fb92f;
+    background-color: white;
     font-family: "Montserrat", sans-serif;
 }
 
-.logoImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 62px; /* ajusta el tamaño de la imagen según sea necesario */
-    height: 63px; /* ajusta el tamaño de la imagen según sea necesario */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
+
+.list {
+    padding: 10px;
+}
+
+.logoPeaku {
+    width: 62px;
+    height: 63px;
+    margin-right: auto; /* Coloca la imagen en el extremo izquierdo */
+}
+
+.header-list {
+    margin-left: auto; /* Coloca el texto en el extremo derecho */
+}
+
+
 
 /* CSS de HeaderFiltro.jsx */
 .HeaderWork {
@@ -23,13 +38,17 @@
     font-family: "Montserrat", sans-serif;
 }
 
+p {
+    justify-content: flex-start
+}
+
 .navbar {
     list-style-type: none;
     display: flex;
     justify-content: flex-end; /* Esto alinea los elementos a la derecha */
   }
   
-  .navbar li {
+  .navbar, .liHeaderFiltro {
     margin-left: 10px; /* Espacio entre elementos */
     margin-right: 10px;
   }
@@ -59,7 +78,7 @@
     list-style-type: none;
   }
   
-  .dropdown-menu li {
+  .dropdown-menu {
     color: white;
     padding: 5px 0;
   }
@@ -67,11 +86,8 @@
   .dropdown-menu li:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  
-  .search {
-    display: flex;
-    align-items: center;
-  }
+
+
   
   .searchTerm {
     width: 200px;
